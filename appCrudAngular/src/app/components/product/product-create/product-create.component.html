@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Criar ou Atualizar Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="ID" [(ngModel)]="product.id" name="id" id="disabledInput" disabled="">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço" [(ngModel)]="product.price" name="price">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createOrUpdateProduct()">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

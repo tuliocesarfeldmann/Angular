@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+}
+
+.material-icons:nth-child(2){
+    color: red;
+}
+
+.actions {
+    cursor: pointer;
+}
+
